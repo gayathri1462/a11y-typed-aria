@@ -1,6 +1,6 @@
-# Contributing to @a11y/typed-aria
+# Contributing to a11y-typed-aria
 
-Thank you for your interest in contributing to `@a11y/typed-aria`! This guide will help you get started.
+Thank you for your interest in contributing to `a11y-typed-aria`! This guide will help you get started.
 
 ## Development Setup
 
@@ -165,6 +165,53 @@ This project uses [tsd](https://github.com/SamVerschueren/tsd) for type-level te
 6. Commit your changes
 7. Push to your fork
 8. Open a Pull Request
+
+## Releasing and Publishing
+
+This project uses [Changesets](https://github.com/changesets/changesets) for version management and publishing.
+
+### 1. Create a Changeset
+
+If your changes require a new version (patch, minor, or major), create a changeset:
+
+```bash
+npm run changeset
+```
+
+Follow the prompts to select the bump type and provide a brief description.
+
+### 2. Versioning (Maintainers Only)
+
+To update versions and generate the changelog:
+
+```bash
+# Updates package.json and CHANGELOG.md
+npm run version
+```
+
+### 3. Publishing to npm (Maintainers Only)
+
+Ensure you are logged into npm (`npm login`), then run:
+
+```bash
+# Build, type-check, and publish
+npm run publish-package
+```
+
+Alternatively, you can publish manually:
+
+```bash
+npm run build
+npm publish --access public
+```
+
+### 4. Post-Publish
+
+After publishing, push the new tags to GitHub:
+
+```bash
+git push origin main --tags
+```
 
 ## Questions?
 

@@ -1,13 +1,13 @@
-# @a11y/typed-aria
+# a11y-typed-aria
 
 > Type-safe ARIA attributes with compile-time validation for better web accessibility. 🎯
 
-[![npm version](https://img.shields.io/npm/v/@a11y/typed-aria.svg)](https://www.npmjs.com/package/@a11y/typed-aria)
+[![npm version](https://img.shields.io/npm/v/a11y-typed-aria.svg)](https://www.npmjs.com/package/a11y-typed-aria)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue.svg)](https://www.typescriptlang.org/)
-[![Zero Runtime](https://img.shields.io/badge/Runtime-Zero-green.svg)](https://www.npmjs.com/package/@a11y/typed-aria)
+[![Zero Runtime](https://img.shields.io/badge/Runtime-Zero-green.svg)](https://www.npmjs.com/package/a11y-typed-aria)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Catch ARIA mistakes at **compile-time**, not in production. `@a11y/typed-aria` provides a strict, spec-aligned type system for ARIA roles and attributes.
+Catch ARIA mistakes at **compile-time**, not in production. `a11y-typed-aria` provides a strict, spec-aligned type system for ARIA roles and attributes.
 
 ---
 
@@ -25,7 +25,7 @@ Catch ARIA mistakes at **compile-time**, not in production. `@a11y/typed-aria` p
 ## 📦 Installation
 
 ```bash
-npm install @a11y/typed-aria
+npm install a11y-typed-aria
 ```
 
 ---
@@ -33,7 +33,7 @@ npm install @a11y/typed-aria
 ## 🚀 Quick Start
 
 ```typescript
-import type { Aria } from "@a11y/typed-aria";
+import type { Aria } from "a11y-typed-aria";
 
 // ✅ Success: Correct attributes for button
 const button: Aria<"button"> = {
@@ -60,7 +60,7 @@ const checkbox: Aria<"checkbox"> = {
 
 ## 🏛️ Core Principles
 
-| Feature | Raw Strings / `Record<string, any>` | `@a11y/typed-aria` |
+| Feature | Raw Strings / `Record<string, any>` | `a11y-typed-aria` |
 | :--- | :--- | :--- |
 | **Validation** | Manual testing / Linting | **Compile-time enforcement** |
 | **Autocomplete** | None | **Role-specific attributes** |
@@ -87,7 +87,7 @@ The package currently supports a wide range of common ARIA roles:
 Using our types with React components is seamless:
 
 ```tsx
-import type { Aria } from "@a11y/typed-aria";
+import type { Aria } from "a11y-typed-aria";
 
 interface ButtonProps extends Aria<"button"> {
   children: React.ReactNode;
@@ -106,7 +106,7 @@ const IconButton = ({ role, children, onClick, ...ariaProps }: ButtonProps) => (
 Manage ARIA state with a reusable hook:
 
 ```tsx
-import { useAria } from "@a11y/typed-aria/examples/react-hook";
+import { useAria } from "a11y-typed-aria/examples/react-hook";
 
 function Accordion({ title, content }) {
   const { ariaProps, toggleExpanded } = useAria("button", {
@@ -141,7 +141,7 @@ Contributions are welcome! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) f
 
 ## 📄 License
 
-MIT © Gayathri DN
+MIT © Gayathri Devi N
 
 ---
 

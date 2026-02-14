@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import type { Aria, AriaRole } from "@a11y/typed-aria";
+import type { Aria, AriaRole } from "a11y-typed-aria";
 
 /**
  * A simple hook to manage toggle states (pressed, expanded, etc.)

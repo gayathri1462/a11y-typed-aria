@@ -3,7 +3,7 @@
  * Demonstrates type-safe ARIA props without any framework
  */
 
-import type { Aria } from "@a11y/typed-aria";
+import type { Aria } from "a11y-typed-aria";
 
 // Type-safe button configuration
 const toggleButton: Aria<"button"> = {

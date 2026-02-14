@@ -1,6 +1,6 @@
 # Examples
 
-This directory contains practical examples of using `@a11y/typed-aria` in different contexts.
+This directory contains practical examples of using `a11y-typed-aria` in different contexts.
 
 ## Files
 
@@ -31,7 +31,7 @@ These examples are for reference and demonstration purposes. To use them in your
 
 1. **Install the package**
    ```bash
-   npm install @a11y/typed-aria
+   npm install a11y-typed-aria
    ```
 
 2. **Copy the relevant example**

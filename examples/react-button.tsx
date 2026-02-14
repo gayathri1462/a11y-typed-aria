@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import type { Aria } from "@a11y/typed-aria";
+import type { Aria } from "a11y-typed-aria";
 
 interface ButtonProps extends Aria<"button"> {
     onClick: () => void;

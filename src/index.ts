@@ -1,10 +1,10 @@
 /**
- * @a11y/typed-aria
+ * a11y-typed-aria
  * TypeScript-first ARIA types with compile-time validation
  * 
  * @example
  * ```ts
- * import type { Aria } from "@a11y/typed-aria";
+ * import type { Aria } from "a11y-typed-aria";
  * 
  * // Type-safe button
  * const button: Aria<"button"> = {
