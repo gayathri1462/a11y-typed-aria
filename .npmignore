@@ -1,0 +1,17 @@
+src/
+tests/
+scripts/
+examples/
+.github/
+tsconfig.json
+tsconfig.build.json
+tsd.json
+.editorconfig
+.prettierrc
+.prettierignore
+.git/
+.gitignore
+*.log
+node_modules/
+.DS_Store
+coverage/
