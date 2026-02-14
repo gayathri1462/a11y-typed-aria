@@ -2,6 +2,8 @@
 
 > Type-safe ARIA attributes with compile-time validation for better web accessibility. 🎯
 
+**[View on NPM](https://www.npmjs.com/package/a11y-typed-aria)**
+
 [![npm version](https://img.shields.io/npm/v/a11y-typed-aria.svg)](https://www.npmjs.com/package/a11y-typed-aria)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue.svg)](https://www.typescriptlang.org/)
 [![Zero Runtime](https://img.shields.io/badge/Runtime-Zero-green.svg)](https://www.npmjs.com/package/a11y-typed-aria)
